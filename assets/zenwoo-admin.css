@@ -1,0 +1,23 @@
+.mwb-coupon-reject-button{
+	background-color: #d3d3d3 !important;
+}
+#mwb_zndsk_loader.mwb_loading-style-bg img {
+	left: 0;
+	margin: 0 auto;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100px;
+}
+#mwb_zndsk_loader.mwb_loading-style-bg {
+background-color: rgba(0, 0, 0, 0.65);
+bottom: 0;
+height: 100%;
+left: 0;
+position: fixed;
+right: 0;
+top: 0;
+width: 100%;
+z-index: 2147483647;
+}
