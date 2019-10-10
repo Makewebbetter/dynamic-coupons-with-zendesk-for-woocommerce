@@ -145,14 +145,15 @@ if ( $activated ) {
 		$suggest_ignored = get_option( 'zenwoo_coupons_suggestions_later', '' );
 		$coupon_key_set  = get_option( 'mwb_zendesk_coupon_key_set', '' );
 		$coupon_key      = get_option( 'mwb_zendesk_coupon_key', '' );
+		$plugin_name     = 'Dynamic Coupons with Zendesk for WooCommerce';
 		?>
 		<div class="notice notice-success mwb-zndsk-form-div" style="<?php echo ( '1' === $suggest_sent || '1' === $suggest_ignored ) ? 'display: none;' : 'display: block;'; ?>">
-			<p><?php esc_html_e( 'Support the Dynamic Coupons with Zendesk for WooCommerce plugin development by sending us tracking data( we just want your Email Address and Name that too only once ).', 'zndskcoupon' ); ?></p>
+			<p><?php /* translators: %2$2s Plugin name */ echo sprintf( esc_html__( 'Support the %1$1s%2$2s%3$3s plugin development by sending us tracking data( we just want your Email Address and Name that too only once ).', 'zndskcoupon' ), '<strong>', esc_html( $plugin_name ), '</strong>' ); ?></p>
 			<input type="button" class="button button-primary mwb-coupon-accept-button" name="mwb_accept_button" value="Accept">
 			<input type="button" class="button mwb-coupon-reject-button" name="mwb_reject_button" value="Ignore">
 		</div>
 		<div class="notice notice-success mwb-zndsk-coupon-key" style="<?php echo ( '1' === $coupon_key_set ) ? 'display: none;' : 'display: block;'; ?>">
-		<p><?php esc_html_e( 'Your Dynamic Coupons with Zendesk for WooCommerce key is ', 'zndskcoupon' ); ?><?php echo esc_html( $coupon_key ); ?><?php esc_html_e( '. Enter this key while installing the App.', 'zndskcoupon' ); ?></p>
+		<p><?php /* translators: %2$2s Dynamic coupon id %4$4s Plugin name */ echo sprintf( esc_html__( 'Your %1$1s%4$4s%3$3s key is %1$1s%2$2s%3$3s. Enter this key while installing the app.', 'zndskcoupon' ), '<strong>', esc_html( $coupon_key ), '</strong>', esc_html( $plugin_name ) ); ?></p>
 		</div>
 		<div style="display: none;" class="mwb_loading-style-bg" id="mwb_zndsk_loader">
 			<img src="<?php echo esc_url( MWB_ZENCOUPON_DIR_URL . 'assets/images/loader.gif' ); ?>">
