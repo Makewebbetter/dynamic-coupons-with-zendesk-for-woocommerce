@@ -179,25 +179,28 @@ if ( ! class_exists( 'MWB_ZENCOUPON_MANAGER' ) ) {
 
 							$data[] = array(
 
-								'coupon_name'   => $coupon->post_name,
+								'coupon_name'   => $coupon->post_title,
 								'coupon_amt'    => $amount,
 								'discount_type' => $currency_symbol,
+								'msg_id'        => 2,
 							);
 						}
 					}
 				} else {
 
 					$data[] = array(
-						'msg' => __( 'No coupons found', 'zndskcoupon' ),
+						'msg'    => __( 'No coupons found', 'zndskcoupon' ),
+						'msg_id' => 0,
 					);
 				}
 
-				$key_set = true;
+				$key_set = 1;
 				update_option( 'mwb_zendesk_coupon_key_set', $key_set );
 
 			} else {
 				$data[] = array(
-					'msg' => __( 'Wrong Store URL', 'zndskcoupon' ),
+					'msg'    => __( 'Wrong Store URL', 'zndskcoupon' ),
+					'msg_id' => 1,
 				);
 			}
 			$data = wp_json_encode( $data );

@@ -13,10 +13,10 @@
  *
  * @wordpress-plugin
  * Plugin Name:       Dynamic Coupons with Zendesk for WooCommerce
- * Plugin URI:        https://makewebbetter.com/product/zendesk-dynamic-coupons
+ * Plugin URI:        https://makewebbetter.com/
  * Description:       Connects WooCommerce store to Zendesk and sends WooCommerce coupon's code to use in your Zendesk instantly.
  * Version:           1.0.0
- * Author:            makewebbetter
+ * Author:            MakeWebBetter
  * Author URI:        https://makewebbetter.com/
  * License:           GPL-3.0+
  * License URI:       https://www.gnu.org/licenses/gpl-3.0.txt
@@ -71,6 +71,7 @@ if ( $activated ) {
 	}
 
 	register_activation_hook( __FILE__, 'mwb_zencoupon_activation' );
+	register_deactivation_hook( __FILE__, 'mwb_zencoupon_deactivation' );
 	add_action( 'wp_loaded', 'mwb_zencoupon_activation' );
 	/**
 	 * Activation hook
@@ -84,6 +85,14 @@ if ( $activated ) {
 			$unique_key = uniqid( 'zencp-key-', false );
 			update_option( 'mwb_zendesk_coupon_key', $unique_key );
 		}
+	}
+	/**
+	 * Deactivation hook
+	 *
+	 * @since    1.0.0
+	 */
+	function mwb_zencoupon_deactivation() {
+		update_option( 'mwb_zendesk_coupon_key_set', 0 );
 	}
 	/**
 	 * Permission check
@@ -168,6 +177,7 @@ if ( $activated ) {
 	 * @since    1.0.0
 	 */
 	function mwb_zencoupon_plugin_error_notice() {
+		update_option( 'mwb_zendesk_coupon_key_set', 0 );
 		?>
 			<div class="error notice is-dismissible">
 			<p><?php esc_html_e( 'Woocommerce is not activated, please activate woocommerce first to install and use zendesk woocommerce plugin.', 'zndskcoupon' ); ?></p>
@@ -180,17 +190,13 @@ if ( $activated ) {
 
 	add_action( 'admin_init', 'mwb_zencoupon_plugin_deactivate' );
 	/**
-	 * Deactivation hook
+	 * Error hook
 	 *
 	 * @since    1.0.0
 	 */
 	function mwb_zencoupon_plugin_deactivate() {
 
 		deactivate_plugins( plugin_basename( __FILE__ ) );
-
-		global $wp_rewrite;
-		$wp_rewrite->flush_rules();
-
 		add_action( 'admin_notices', 'mwb_zencoupon_plugin_error_notice' );
 	}
 }
