@@ -197,6 +197,10 @@ if ( $activated ) {
 	function mwb_zencoupon_plugin_deactivate() {
 
 		deactivate_plugins( plugin_basename( __FILE__ ) );
+
+		global $wp_rewrite;
+		$wp_rewrite->flush_rules();
+
 		add_action( 'admin_notices', 'mwb_zencoupon_plugin_error_notice' );
 	}
 }

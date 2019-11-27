@@ -184,6 +184,11 @@ if ( ! class_exists( 'MWB_ZENCOUPON_MANAGER' ) ) {
 								'discount_type' => $currency_symbol,
 								'msg_id'        => 2,
 							);
+						} else {
+							$data[] = array(
+								'msg'    => __( 'No coupons found', 'zndskcoupon' ),
+								'msg_id' => 0,
+							);
 						}
 					}
 				} else {

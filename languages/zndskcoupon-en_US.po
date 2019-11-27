@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: zendesk-dynamic-coupons-1.0.0\n"
-"POT-Creation-Date: 2019-10-15 11:57+0530\n"
-"PO-Revision-Date: 2019-10-15 11:57+0530\n"
+"Project-Id-Version: Dynamic Coupons with Zendesk for WooCommerce-v1.0.0\n"
+"POT-Creation-Date: 2019-11-27 16:35+0530\n"
+"PO-Revision-Date: 2019-11-27 16:36+0530\n"
 "Last-Translator: \n"
 "Language-Team: MakeWebBetter\n"
 "Language: en_US\n"
@@ -10,18 +10,20 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 2.0.6\n"
-"X-Poedit-Basepath: \n"
+"X-Poedit-Basepath: ../../../../opt/lampp/htdocs/LatestWP/wordpress/wp-"
+"content/plugins/zendesk-dynamic-coupons\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: __;esc_html_e;esc_html__\n"
+"X-Poedit-KeywordsList: __;esc_html;esc_html__;esc_html_e\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: Library/class-mwb-zencoupon-manager.php:192
+#: Library/class-mwb-zencoupon-manager.php:189
+#: Library/class-mwb-zencoupon-manager.php:197
 msgid "No coupons found"
 msgstr ""
 
-#: Library/class-mwb-zencoupon-manager.php:202
-#: Library/class-mwb-zencoupon-manager.php:263
+#: Library/class-mwb-zencoupon-manager.php:207
+#: Library/class-mwb-zencoupon-manager.php:268
 msgid "Wrong Store URL"
 msgstr ""
 
