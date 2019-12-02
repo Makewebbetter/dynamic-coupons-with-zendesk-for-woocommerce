@@ -3,31 +3,32 @@ Contributors: makewebbetter
 Donate link:  https://makewebbetter.com/
 Tags: 	ecommerce, woocommerce, wordpress, coupon details, zendesk, zendesk WooCommerce, new coupon, WooCommerce orders, ticket details, custom action, generate coupons, create coupons
 Requires at least: 4.0
-Tested up to: 5.2.2
+Tested up to: 5.3
 WC requires at least: 3.0.0
-WC tested up to: 3.7.0
+WC tested up to: 3.8.1
 Stable tag: 1.0.0
 Requires PHP: 5.6
 License: GPLv3 or later 
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-This plugin allows to connect WooCommerce store to Zendesk account and sends WooCommerce coupon's code to use in your Zendesk.
-
 == Description ==
 
-Zendesk WooCommerce Sync will provide a managed process in dealing with new tickets and assembling customers’ order data. This is an integration between Zendesk and WooCommerce where the user needs to install the WooCommerce Orders App (from Zendesk Marketplace) first before one can proceed syncing this plugin. 
+Dynamic Coupons with Zendesk for WooCommerce is a ticket management plugin that streamlines all the activities related to WooCommerce coupons. Admin can create, retrieve and send unique coupon codes to their customers directly from their  Zendesk account without logging in to the WooCommerce store every time.
 
-Here, Zendesk WooCommerce Sync plugin will display the ‘top 5 WooCommerce orders details’ of new customers request. It is plainly, zendesk oriented solution which will only work for WooCommerce orders. 
-This plugin is a customer centric tool which allows email ids for better functioning of the chat. 
+This works as a bridge that syncs WooCommerce store with Zendesk. To execute this successfully, a user must install Dynamic Coupons for WooCommerce App(from Zendesk Marketplace) to sync both WooCommerce and Zendesk accounts.
 
-The user need not go the WooCommerce store each time to check order details. The user just need to check his zendesk account for direct information of the order status.
+Users can select discount type, add coupon amount, and coupon expiration date to generate a new coupon code. They can also fetch the details of those coupons they’ve created in their WooCommerce store. 
+
+== Dependency ==
+
+For using Dynamic Coupons with Zendesk for WooCommerce plugin, you need to install Dynamic Coupons for WooCommerce App from the Zendesk Marketplace.
 
 
 = Main features =
 
-* Zendesk WooCommerce Sync allows custom action of your new customers through order details. 
-* Zendesk WooCommerce will provide with live information about your customers’ orders. 
-* Get Guest Order Details of the customer. 
+* Dynamic Coupons with Zendesk for WooCommerce allows users to create WooCommerce Coupons.
+* Users can add Discount type, Coupon Amount, and Coupon Expiration date to create a new coupon code.
+* Users can also fetch the coupon codes created on their WooCommerce store. 
 
 = Support =
 
