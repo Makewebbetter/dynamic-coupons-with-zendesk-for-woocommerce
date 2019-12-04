@@ -152,6 +152,7 @@ if ( ! class_exists( 'MWB_ZENCOUPON_MANAGER' ) ) {
 			$currency = get_option( 'woocommerce_currency' );
 			$symbol   = html_entity_decode( get_woocommerce_currency_symbol( $currency ) );
 			$key      = get_option( 'mwb_zendesk_coupon_key', '' );
+			$no_coupon_found = "yes";
 
 			$post_params = $request->get_params();
 
@@ -184,12 +185,8 @@ if ( ! class_exists( 'MWB_ZENCOUPON_MANAGER' ) ) {
 								'discount_type' => $currency_symbol,
 								'msg_id'        => 2,
 							);
-						} else {
-							$data[] = array(
-								'msg'    => __( 'No coupons found', 'zndskcoupon' ),
-								'msg_id' => 0,
-							);
-						}
+							$no_coupon_found = "no";
+						} 
 					}
 				} else {
 
@@ -208,6 +205,13 @@ if ( ! class_exists( 'MWB_ZENCOUPON_MANAGER' ) ) {
 					'msg_id' => 1,
 				);
 			}
+			if($no_coupon_found == "yes") {
+				$data[] = array(
+					'msg'    => __( 'No coupons found', 'zndskcoupon' ),
+					'msg_id' => 0,
+				);
+			}
+			
 			$data = wp_json_encode( $data );
 			return $data;
 		}
