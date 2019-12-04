@@ -13,7 +13,7 @@
  *
  * @wordpress-plugin
  * Plugin Name:       Dynamic Coupons with Zendesk for WooCommerce
- * Plugin URI:        https://makewebbetter.com/
+ * Plugin URI:        https://wordpress.org/plugins/dynamic-coupons-with-zendesk-for-woocommerce
  * Description:       Connects WooCommerce store to Zendesk and sends WooCommerce coupon's code to use in your Zendesk instantly.
  * Version:           1.0.0
  * Author:            MakeWebBetter
@@ -21,8 +21,8 @@
  * License:           GPL-3.0+
  * License URI:       https://www.gnu.org/licenses/gpl-3.0.txt
  * Text Domain:       zndskcoupon
- * Tested up to:      5.2.2
- * WC tested up to:   3.7.0
+ * Tested up to:      5.3
+ * WC tested up to:   3.8.1
  * Domain Path:       /languages
  */
 
