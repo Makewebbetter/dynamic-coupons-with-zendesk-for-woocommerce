@@ -15,14 +15,14 @@
  * Plugin Name:       Dynamic Coupons with Zendesk for WooCommerce
  * Plugin URI:        https://wordpress.org/plugins/dynamic-coupons-with-zendesk-for-woocommerce
  * Description:       Connects WooCommerce store to Zendesk and sends WooCommerce coupon's code to use in your Zendesk instantly.
- * Version:           1.0.0
+ * Version:           1.0.1
  * Author:            MakeWebBetter
  * Author URI:        https://makewebbetter.com/
  * License:           GPL-3.0+
  * License URI:       https://www.gnu.org/licenses/gpl-3.0.txt
  * Text Domain:       zndskcoupon
- * Tested up to:      5.3
- * WC tested up to:   3.8.1
+ * Tested up to:      5.6.0
+ * WC tested up to:   4.8
  * Domain Path:       /languages
  */
 
@@ -127,9 +127,9 @@ if ( $activated ) {
 	 */
 	function mwb_zenwoo_coupons_enqueue_script() {
 
-		wp_register_style( 'zenwoo_scripts', MWB_ZENCOUPON_DIR_URL . 'assets/zenwoo-admin.css', false, '1.0', 'all' );
+		wp_register_style( 'zenwoo_scripts', MWB_ZENCOUPON_DIR_URL . 'assets/zenwoo-admin.css', false, '1.0.1', 'all' );
 		wp_enqueue_style( 'zenwoo_scripts' );
-		wp_register_script( 'zenwoo_scripts', MWB_ZENCOUPON_DIR_URL . 'assets/zenwoo-admin.js', array( 'jquery' ), '1.0', true );
+		wp_register_script( 'zenwoo_scripts', MWB_ZENCOUPON_DIR_URL . 'assets/zenwoo-admin.js', array( 'jquery' ), '1.0.1', true );
 		wp_enqueue_script( 'zenwoo_scripts' );
 		wp_localize_script(
 			'zenwoo_scripts', 'zenwoo_ajax_object',
