@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: dynamic-coupons-with-zendesk-for-woocommerce-v1.0.0\n"
-"POT-Creation-Date: 2019-12-04 15:19+0530\n"
-"PO-Revision-Date: 2019-12-04 15:19+0530\n"
+"Project-Id-Version: dynamic-coupons-with-zendesk-for-woocommerce v1.0.1\n"
+"POT-Creation-Date: 2021-02-18 15:14+0530\n"
+"PO-Revision-Date: 2021-02-18 15:14+0530\n"
 "Last-Translator: \n"
 "Language-Team: MakeWebBetter\n"
 "Language: en_US\n"
@@ -14,7 +14,6 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;esc_html;esc_html__;esc_html_e\n"
-"X-Poedit-SearchPath-0: .\n"
 
 #: Library/class-mwb-zencoupon-manager.php:194
 #: Library/class-mwb-zencoupon-manager.php:210

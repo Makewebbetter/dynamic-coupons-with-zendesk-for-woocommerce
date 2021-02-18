@@ -20,7 +20,7 @@
  * Author URI:        https://makewebbetter.com/
  * License:           GPL-3.0+
  * License URI:       https://www.gnu.org/licenses/gpl-3.0.txt
- * Text Domain:       zndskcoupon
+ * Text Domain:       dynamic-coupons-with-zendesk-for-woocommerce
  * Tested up to:      5.6.0
  * WC tested up to:   4.8
  * Domain Path:       /languages
@@ -136,9 +136,9 @@ if ( $activated ) {
 			array(
 				'ajax_url'              => admin_url( 'admin-ajax.php' ),
 				'zenwooSecurity'        => wp_create_nonce( 'zenwoo_security' ),
-				'zenwooMailSuccess'     => __( 'Mail Sent Successfully.', 'zndskcoupon' ),
-				'zenwooMailFailure'     => __( 'Mail not sent', 'zndskcoupon' ),
-				'zenwooMailAlreadySent' => __( 'Mail already sent', 'zndskcoupon' ),
+				'zenwooMailSuccess'     => __( 'Mail Sent Successfully.', 'dynamic-coupons-with-zendesk-for-woocommerce' ),
+				'zenwooMailFailure'     => __( 'Mail not sent', 'dynamic-coupons-with-zendesk-for-woocommerce' ),
+				'zenwooMailAlreadySent' => __( 'Mail already sent', 'dynamic-coupons-with-zendesk-for-woocommerce' ),
 			)
 		);
 	}
@@ -157,12 +157,12 @@ if ( $activated ) {
 		$plugin_name     = 'Dynamic Coupons with Zendesk for WooCommerce';
 		?>
 		<div class="notice notice-success mwb-zndsk-form-div" style="<?php echo ( '1' === $suggest_sent || '1' === $suggest_ignored ) ? 'display: none;' : 'display: block;'; ?>">
-			<p><?php /* translators: %2$2s Plugin name */ echo sprintf( esc_html__( 'Support the %1$1s%2$2s%3$3s plugin development by sending us tracking data( we just want your Email Address and Name that too only once ).', 'zndskcoupon' ), '<strong>', esc_html( $plugin_name ), '</strong>' ); ?></p>
+			<p><?php /* translators: %2$2s Plugin name */ echo sprintf( esc_html__( 'Support the %1$1s%2$2s%3$3s plugin development by sending us tracking data( we just want your Email Address and Name that too only once ).', 'dynamic-coupons-with-zendesk-for-woocommerce' ), '<strong>', esc_html( $plugin_name ), '</strong>' ); ?></p>
 			<input type="button" class="button button-primary mwb-coupon-accept-button" name="mwb_accept_button" value="Accept">
 			<input type="button" class="button mwb-coupon-reject-button" name="mwb_reject_button" value="Ignore">
 		</div>
 		<div class="notice notice-success mwb-zndsk-coupon-key" style="<?php echo ( '1' === $coupon_key_set ) ? 'display: none;' : 'display: block;'; ?>">
-		<p><?php /* translators: %2$2s Dynamic coupon id %4$4s Plugin name */ echo sprintf( esc_html__( 'Your %1$1s%4$4s%3$3s key is %1$1s%2$2s%3$3s. Enter this key while installing the app.', 'zndskcoupon' ), '<strong>', esc_html( $coupon_key ), '</strong>', esc_html( $plugin_name ) ); ?></p>
+		<p><?php /* translators: %2$2s Dynamic coupon id %4$4s Plugin name */ echo sprintf( esc_html__( 'Your %1$1s%4$4s%3$3s key is %1$1s%2$2s%3$3s. Enter this key while installing the app.', 'dynamic-coupons-with-zendesk-for-woocommerce' ), '<strong>', esc_html( $coupon_key ), '</strong>', esc_html( $plugin_name ) ); ?></p>
 		</div>
 		<div style="display: none;" class="mwb_loading-style-bg" id="mwb_zndsk_loader">
 			<img src="<?php echo esc_url( MWB_ZENCOUPON_DIR_URL . 'assets/images/loader.gif' ); ?>">
@@ -180,7 +180,7 @@ if ( $activated ) {
 		update_option( 'mwb_zendesk_coupon_key_set', 0 );
 		?>
 			<div class="error notice is-dismissible">
-			<p><?php esc_html_e( 'Woocommerce is not activated, please activate woocommerce first to install and use zendesk woocommerce plugin.', 'zndskcoupon' ); ?></p>
+			<p><?php esc_html_e( 'Woocommerce is not activated, please activate woocommerce first to install and use zendesk woocommerce plugin.', 'dynamic-coupons-with-zendesk-for-woocommerce' ); ?></p>
 			</div>
 			<style>
 			#message{display:none;}

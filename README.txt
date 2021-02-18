@@ -3,10 +3,10 @@ Contributors: makewebbetter
 Donate link:  https://makewebbetter.com/
 Tags: 	ecommerce, woocommerce, wordpress, coupon details, zendesk, zendesk WooCommerce, new coupon, WooCommerce orders, ticket details, custom action, generate coupons, create coupons
 Requires at least: 4.0
-Tested up to: 5.3
+Tested up to: 5.6.0
 WC requires at least: 3.0.0
-WC tested up to: 3.8.1
-Stable tag: 1.0.0
+WC tested up to: 4.8
+Stable tag: 1.0.1
 Requires PHP: 5.6
 License: GPLv3 or later 
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -104,6 +104,9 @@ In your Zendesk account when you upload Dynamic Coupons for WooCommerce app, you
 
 
 == Changelog ==
+
+= 1.0.1 - Released on 12th February 2020 =
+* Improved: Compatibility with WP(5.6.0) and WC(4.8)
 
 = 1.0.0 =
 * First version

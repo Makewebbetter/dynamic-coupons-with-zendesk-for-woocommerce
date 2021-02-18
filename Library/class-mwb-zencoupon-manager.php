@@ -77,7 +77,7 @@ if ( ! class_exists( 'MWB_ZENCOUPON_MANAGER' ) ) {
 		public function mwb_zencoupon_load_plugin_textdomain() {
 
 			$var = load_plugin_textdomain(
-				'zndskcoupon',
+				'dynamic-coupons-with-zendesk-for-woocommerce',
 				false,
 				dirname( dirname( plugin_basename( __FILE__ ) ) ) . '/languages/'
 			);
@@ -191,7 +191,7 @@ if ( ! class_exists( 'MWB_ZENCOUPON_MANAGER' ) ) {
 				} else {
 
 					$data[] = array(
-						'msg'    => __( 'No coupons found', 'zndskcoupon' ),
+						'msg'    => __( 'No coupons found', 'dynamic-coupons-with-zendesk-for-woocommerce' ),
 						'msg_id' => 0,
 					);
 				}
@@ -201,13 +201,13 @@ if ( ! class_exists( 'MWB_ZENCOUPON_MANAGER' ) ) {
 
 			} else {
 				$data[] = array(
-					'msg'    => __( 'Wrong Store URL', 'zndskcoupon' ),
+					'msg'    => __( 'Wrong Store URL', 'dynamic-coupons-with-zendesk-for-woocommerce' ),
 					'msg_id' => 1,
 				);
 			}
 			if($no_coupon_found == "yes") {
 				$data[] = array(
-					'msg'    => __( 'No coupons found', 'zndskcoupon' ),
+					'msg'    => __( 'No coupons found', 'dynamic-coupons-with-zendesk-for-woocommerce' ),
 					'msg_id' => 0,
 				);
 			}
@@ -269,7 +269,7 @@ if ( ! class_exists( 'MWB_ZENCOUPON_MANAGER' ) ) {
 				);
 			} else {
 				$data[] = array(
-					'msg' => __( 'Wrong Store URL', 'zndskcoupon' ),
+					'msg' => __( 'Wrong Store URL', 'dynamic-coupons-with-zendesk-for-woocommerce' ),
 				);
 			}
 
